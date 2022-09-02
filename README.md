@@ -10,7 +10,7 @@ I wanted to design the UI for a quick and light React weather app, and have a go
 
 The groundwork for the app is [this video](https://www.youtube.com/watch?v=Reny0cTTv24&t=57s) by Slobodan Gajic/freeCodeCamp.
 
-*whether* shows a 12-hour forecast and information about sunrise, sunset, and moon phases, because why not! It also shows a general forecast for the week ahead.
+*whether* shows a 24-hour forecast and information about sunrise, sunset, and moon phases, because why not! It also shows a general forecast for the week ahead.
 
 To develop *whether*, I used React, building entirely with function components and Hooks. I also used OpenWeather One Call API 3.0 to retrieve weather data.
 

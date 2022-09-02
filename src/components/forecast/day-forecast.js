@@ -43,7 +43,7 @@ export const DayForecast = ({ data }) => {
   return (
     <div className="today-horizontal-scroll">
       <img className="separator-line" alt=" " src="../hourly-line.svg" />
-      {data.hourly.slice(0, 16).map((item, idx) => (
+      {data.hourly.slice(0, 24).map((item, idx) => (
         <div className="today-horizontal-scroll-item" key={idx}>
           <label>{forecastHours[idx]}:00</label>
           <img

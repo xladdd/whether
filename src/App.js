@@ -42,6 +42,7 @@ function App() {
       {forecast &&  <Section data={forecast}/>}
       {forecast && <WeekForecast data={forecast}/>}
       {forecast && <Bottom data={forecast}/>}
+      <div className="footer"></div>
     </div>
   );
 }

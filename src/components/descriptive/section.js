@@ -57,9 +57,9 @@ export const Section = ({ data }) => {
   return (
     <h3>
       The sun rises at <span style={{ color: "#F8C100" }}>{sunrise}</span>, sets
-      at <span style={{ color: "#0008CC" }}>{sunset}</span>. A {typeOfMoon} moon
-      rises at <span style={{ color: "#F8C100" }}>{moonrise}</span>, sets at <span style={{ color: "#0008CC" }}>{moonset}</span>. And the rest of the
-      week looks like this:
+      at <span style={{ color: "#0008CC" }}>{sunset}</span>. A&nbsp;{typeOfMoon} moon
+      rises at&nbsp;<span style={{ color: "#F8C100" }}>{moonrise}</span>, sets at&nbsp;<span style={{ color: "#0008CC" }}>{moonset}</span>.<br/>And the rest of the
+      week looks like&nbsp;this:
     </h3>
   );
 };

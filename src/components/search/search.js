@@ -38,11 +38,9 @@ export const Search = ({ onSearchChange }) => {
     }),
     control: () => ({
       // none of react-select's styles are passed to <Control />
-      width: 400,
       fontSize: 52.5,
       padding: 0,
       margin: 0,
-      textDecoration: "underline 4px dotted",
       display: "inline",
       color: "black",
     }),
@@ -65,9 +63,11 @@ export const Search = ({ onSearchChange }) => {
         placeholder="your city"
         debounceTimeout={600}
         value={search}
+        width={250}
         onChange={handleOnChange}
         loadOptions={loadOptions}
         styles={customStyles}
+        className='react-select-container'
         components={{ DropdownIndicator:() => null, IndicatorSeparator:() => null }}
       />
     </div>

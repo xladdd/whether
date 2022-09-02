@@ -22,7 +22,7 @@ export const WeekForecast = ({ data }) => {
     <div className="week-horizontal-scroll">
       <img className="separator-line" alt=" " src="../daily-line.svg" />
 
-      {data.hourly.splice(0, 6).map((item, idx) => (
+      {data.daily.slice(0, 6).map((item, idx) => (
         <div className="week-horizontal-scroll-item" key={idx}>
           <label>{forecastDays[idx]}</label>
           <img
@@ -30,7 +30,7 @@ export const WeekForecast = ({ data }) => {
             className="icon-small"
             src={`icons/${item.weather[0].icon}.png`}
           />
-          <label className="scroll-temp">{Math.round(item.temp)}°C</label>
+          <label className="scroll-temp">{Math.round(item.temp.day)}°C</label>
         </div>
       ))}
     </div>

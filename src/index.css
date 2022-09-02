@@ -17,9 +17,8 @@ h3 {
   font-weight: 300;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  max-width: 500px;
 }
-
-
 
 .search-text {
   font-size: 3.5rem;
@@ -30,13 +29,14 @@ h3 {
   padding-left: 2.5rem;
 }
 
-
 /*Forecast*/
 .today-horizontal-scroll {
   align-items: center;
   display: flex;
   overflow: scroll;
   padding-left: 2.5rem;
+  padding-right: 5rem;
+  scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
@@ -45,18 +45,25 @@ h3 {
 
 .today-horizontal-scroll-item {
   margin: auto 15px;
+  align-items: center;
+  text-align: center;
+  width: 4rem;
 }
-
 
 .week-horizontal-scroll {
   align-items: center;
   display: flex;
   overflow: scroll;
   padding-left: 2.5rem;
+  padding-right: 5rem;
+  scrollbar-width: none;
 }
 
 .week-horizontal-scroll-item {
   margin: auto 15px;
+  align-items: center;
+  text-align: center;
+  width: 4rem;
 }
 
 .separator-line {
@@ -64,7 +71,19 @@ h3 {
 }
 
 .icon-small {
-  width: 40px;
+  width: 50px;
 }
 
+.react-select-container {
+  max-width: fit-content;
+  text-decoration: underline 4px dotted;
+}
 
+@media only screen and (min-width: 1000px) {
+  h3,
+  .week-horizontal-scroll,
+  .today-horizontal-scroll,
+  .search-bar {
+    padding-left: 30rem;
+  }
+}

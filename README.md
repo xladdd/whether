@@ -4,6 +4,8 @@
 
 It lives [here](https://whetherrrrr.netlify.app).
 
+The Figma project is [here](https://www.figma.com/file/qT6yEgEureSynIUPUhVXXW/whether?node-id=118%3A4).
+
 ## Description
 
 I wanted to design the UI for a quick and light React weather app, and have a go at building it myself!

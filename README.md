@@ -2,7 +2,7 @@
 
 *whether* is a small web app that shows you the weather. 
 
-It lives [here](link).
+It lives [here](https://whetherrrrr.netlify.app).
 
 ## Description
 

@@ -22,4 +22,4 @@ To develop *whether*, I used React, building entirely with function components a
 
 ## Screenshot
 
-![A test image](src/screenshot.jpg)
+![Screenshot of whether](public/screenshot.jpeg)

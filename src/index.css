@@ -1,5 +1,5 @@
 body {
-  margin: 2.5rem auto;
+  margin: 4rem auto 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f5f5f5;
@@ -39,15 +39,22 @@ h3 {
   scrollbar-width: none;
 }
 
+.scroll-back-spacer {
+  display: inline-block;
+  min-width: 5rem;
+  min-height: auto;
+  color: #f5f5f5;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 .today-horizontal-scroll-item {
-  margin: auto 15px;
+  margin: auto 1rem;
   align-items: center;
   text-align: center;
-  width: 4rem;
+  width: 3rem;
 }
 
 .week-horizontal-scroll {
@@ -60,14 +67,14 @@ h3 {
 }
 
 .week-horizontal-scroll-item {
-  margin: auto 15px;
+  margin: auto 1rem;
   align-items: center;
   text-align: center;
-  width: 4rem;
+  width: 3rem;
 }
 
 .separator-line {
-  margin-right: 30px;
+  margin-right: 1rem;
 }
 
 .icon-small {
@@ -81,8 +88,24 @@ h3 {
 
 .footer {
   display: block;
+  margin-top: 4rem;
+  padding-right: 2.5rem;
+  float: right;
   min-height: 5rem;
   width: auto;
+}
+
+.footer p {
+  border: 1px solid #808080;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #808080;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -91,5 +114,24 @@ h3 {
   .today-horizontal-scroll,
   .search-bar {
     padding-left: 30rem;
+  }
+  .footer {
+    margin-top: 8rem;
+    padding-right: 0;
+    padding-left: 850px;
+    float: left;
+  }
+  .separator-line {
+    margin-right: 2rem;
+  }
+  .today-horizontal-scroll-item,
+  .week-horizontal-scroll-item {
+    width: 4rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  html {
+    font-size: 11px;
   }
 }

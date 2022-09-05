@@ -33,6 +33,7 @@ export const WeekForecast = ({ data }) => {
           <label className="scroll-temp">{Math.round(item.temp.day)}°C</label>
         </div>
       ))}
+      <div className="scroll-back-spacer">.</div>
     </div>
   );
 };

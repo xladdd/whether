@@ -29,7 +29,7 @@ export const DayForecast = ({ data }) => {
   const currentUNIX = data.current.dt;
   const offsetUNIX = data.timezone_offset;
   const localUNIX = currentUNIX + offsetUNIX;
- // console.log(`Local UNIX is ${localUNIX}`);
+  // console.log(`Local UNIX is ${localUNIX}`);
   const date = new Date(localUNIX * 1000);
   const hourInADay = date.getUTCHours();
   //console.log(hourInADay);
@@ -54,6 +54,7 @@ export const DayForecast = ({ data }) => {
           <label className="scroll-temp">{Math.round(item.temp)}°C</label>
         </div>
       ))}
+      <div className="scroll-back-spacer">.</div>
     </div>
   );
 };

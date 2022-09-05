@@ -42,7 +42,7 @@ function App() {
       {forecast &&  <Section data={forecast}/>}
       {forecast && <WeekForecast data={forecast}/>}
       {forecast && <Bottom data={forecast}/>}
-      <div className="footer"></div>
+      {forecast && <div className="footer"><p><a href="http://vladdjpg.github.io/">Vlad made this</a></p></div>}
     </div>
   );
 }

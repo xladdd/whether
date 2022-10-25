@@ -24,7 +24,7 @@ export const WeekForecast = ({ data }) => {
 
       {data.daily.slice(0, 6).map((item, idx) => (
         <div className="week-horizontal-scroll-item" key={idx}>
-          <label>{forecastDays[idx]}</label>
+          <label>{forecastDays[idx].substring(0, 3)}</label>
           <img
             alt="weather"
             className="icon-small"

@@ -20,6 +20,13 @@ h3 {
   max-width: 500px;
 }
 
+.loader {
+  text-align: center;
+  font-size: 4rem;
+  color: #FF53BA;
+  font-weight: bold;
+}
+
 .search-text {
   font-size: 3.5rem;
   font-weight: 600;

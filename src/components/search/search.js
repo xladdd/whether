@@ -60,7 +60,7 @@ export const Search = ({ onSearchChange }) => {
         <span className="search-text">weather in </span>
       )}
       <AsyncPaginate 
-        placeholder="your city"
+        placeholder="another city <"
         debounceTimeout={600}
         value={search}
         width={250}

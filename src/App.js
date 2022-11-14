@@ -71,7 +71,7 @@ function App() {
 
   return (
     <div className="container">
-      {(currentWeather === null) ? <p className="loader">Loading...</p> : <div></div> }
+      {(currentWeather === null) ? <p className="loader">wait for it...</p> : <div></div> }
       {currentWeather && <Search onSearchChange={handleOnSearchChange} />}
       {currentWeather && (
         <CurrentWeather data={currentWeather} data2={forecast} />

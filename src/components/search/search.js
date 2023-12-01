@@ -55,12 +55,12 @@ export const Search = ({ onSearchChange }) => {
   return (
     <div className="search-bar">
       {search === null ? (
-        <span className="search-text">...whether it's&nbsp;<AnimatedWord/> in </span>
+        <span className="search-text">...whether it's&nbsp;<AnimatedWord/></span>
       ) : (
         <span className="search-text">weather in </span>
       )}
       <AsyncPaginate 
-        placeholder="another city <"
+        placeholder="anywhere <"
         debounceTimeout={600}
         value={search}
         width={250}

@@ -83,7 +83,7 @@ function App() {
       {forecast && (
         <div className="footer">
           <p>
-            <a href="https://frolov.cz/">Vlad made this</a>
+            <a href="https://xladdd.github.io/">Vlad made this</a>
           </p>
         </div>
       )}
